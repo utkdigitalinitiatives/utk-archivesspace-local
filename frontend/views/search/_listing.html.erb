@@ -21,16 +21,19 @@
           <%= link_to title_column_header_label, build_search_params("sort" => @search_data.sort_filter_for("title_sort")) %>
         </th>
       <% end %>
-      <% if show_context_column? %>
+      <!-- TODO: deprecate -->
+      <% if self.respond_to?(:show_context_column?) and self.send(:show_context_column?) %>
         <th>
           <%= context_column_header_label %>
         </th>
       <% end %>
+      <!-- BEGIN: Add an identifer column for accessions / resources / d.obj in search context -->
       <% if request.path =~ /\/(advanced_)*search/ %>
         <th class="col identifier sortable <% if @search_data.sorted_by === "identifier"%>sort-<%= @search_data.current_sort_direction %><% end %>">
-          <%= link_to I18n.t("search_results.result_identifier"), build_search_params("sort" => @search_data.sort_filter_for("identifier")) %>
+          <%= link_to "Identifier", build_search_params("sort" => @search_data.sort_filter_for("identifier")) %>
         </th>
       <% end %>
+      <!-- END -->
       <% if extra_columns? %>
         <% extra_columns.each do |col| %>
           <th class="<%= col.class %>">
@@ -51,6 +54,15 @@
     <tbody>
     <% @search_data['results'].each do |result|
       deleted = (params.has_key?("deleted_uri") and Array(params["deleted_uri"]).include?(result["id"])) || false
+      # SET DISPLAY IDENTIFIER
+      @display_identifier = ""
+      @display_identifier = result["identifier"].html_safe if result["identifier"]
+      @display_identifier = result["digital_object_id"].html_safe if result["digital_object_id"]
+      @display_identifier = result["authority_id"].html_safe if result["authority_id"]
+      if result["primary_type"] == "archival_object"
+        json = JSON.parse(result["json"])
+        @display_identifier = json["component_id"].html_safe if json["component_id"]
+      end
     %>
       <tr class="<%= "deleted" if deleted %>">
         <% if allow_multi_select? %>
@@ -82,16 +94,19 @@
             <%=  clean_mixed_content(result["title"]).html_safe || clean_mixed_content(result['display_string']).html_safe %>
           </td>
         <% end %>
-        <% if show_context_column? %>
+        <!-- TODO: deprecate -->
+        <% if self.respond_to?(:show_context_column?) and self.send(:show_context_column?) %>
           <td>
             <%= render_aspace_partial :partial => "search/context", :locals => {:result => result} %>
           </td>
         <% end %>
+        <!-- BEGIN: Add an identifer column for accessions / resources / d.obj in search context -->
         <% if request.path =~ /\/(advanced_)*search/ %>
           <td>
-            <%= identifier_for_search_result(result) %>
+            <%= @display_identifier %>
           </td>
         <% end %>
+        <!-- END -->
         <% if extra_columns? %>
           <% extra_columns.each do |col| %>
             <td><%= col.value_for(result) %></td>
