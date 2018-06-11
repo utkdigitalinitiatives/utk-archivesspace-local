@@ -21,7 +21,6 @@
           <%= link_to title_column_header_label, build_search_params("sort" => @search_data.sort_filter_for("title_sort")) %>
         </th>
       <% end %>
-      <!-- TODO: deprecate -->
       <% if self.respond_to?(:show_context_column?) and self.send(:show_context_column?) %>
         <th>
           <%= context_column_header_label %>
@@ -94,7 +93,6 @@
             <%=  clean_mixed_content(result["title"]).html_safe || clean_mixed_content(result['display_string']).html_safe %>
           </td>
         <% end %>
-        <!-- TODO: deprecate -->
         <% if self.respond_to?(:show_context_column?) and self.send(:show_context_column?) %>
           <td>
             <%= render_aspace_partial :partial => "search/context", :locals => {:result => result} %>
