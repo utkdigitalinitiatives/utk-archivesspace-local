@@ -26,10 +26,13 @@
           <%= context_column_header_label %>
         </th>
       <% end %>
-      <!-- BEGIN: Add an identifer column for accessions / resources / d.obj in search context -->
+      <!-- BEGIN: Add an identifer column for accessions / resources / d.obj and a processing status column in search context -->
       <% if request.path =~ /\/(advanced_)*search/ %>
         <th class="col identifier sortable <% if @search_data.sorted_by === "identifier"%>sort-<%= @search_data.current_sort_direction %><% end %>">
           <%= link_to "Identifier", build_search_params("sort" => @search_data.sort_filter_for("identifier")) %>
+        </th>
+        <th class="col processing_status sortable <% if @search_data.sorted_by === "processing_status_enum_s"%>sort-<%= @search_data.current_sort_direction %><% end %>">
+          <%= link_to "Processing Status", build_search_params("sort" => @search_data.sort_filter_for("processing_status_enum_s")) %>
         </th>
       <% end %>
       <!-- END -->
@@ -62,6 +65,9 @@
         json = JSON.parse(result["json"])
         @display_identifier = json["component_id"].html_safe if json["component_id"]
       end
+      # SET PROCESSING STATUS
+      @processing_status = ""
+      @processing_status = result["processing_status_enum_s"][0].html_safe if result["processing_status_enum_s"]
     %>
       <tr class="<%= "deleted" if deleted %>">
         <% if allow_multi_select? %>
@@ -102,6 +108,9 @@
         <% if request.path =~ /\/(advanced_)*search/ %>
           <td>
             <%= @display_identifier %>
+          </td>
+          <td>
+            <%= @processing_status %>
           </td>
         <% end %>
         <!-- END -->
