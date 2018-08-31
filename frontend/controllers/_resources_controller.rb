@@ -4,10 +4,9 @@ require Rails.root.join('app/controllers/resources_controller')
 
 class ResourcesController < ApplicationController
 
-  DEFAULT_RES_INDEX_OPTS = {
-      'resolve[]' => ['repository:id', 'resource:id@compact_resource', 'top_container_uri_u_sstr:id'],
-      'sort' => 'identifier asc',
-      'facet.mincount' => 1
-  }
+  def index
+    params["sort"] ||= "identifier asc"
+    @search_data = Search.for_type(session[:repo_id], params[:include_components]==="true" ? ["resource", "archival_object"] : "resource", params_for_backend_search.merge({"facet[]" => SearchResultData.RESOURCE_FACETS}))
+  end
 
 end
