@@ -1,5 +1,5 @@
 # override the default sorting for accessions
-require Rails.root.join()
+require Rails.root.join('app/controllers/accessions_controller')
 
 class AccessionsController < ApplicationController
 
