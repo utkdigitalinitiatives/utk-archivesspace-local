@@ -3,10 +3,6 @@
   <%= render_aspace_partial :partial => "shared/pagination_summary" %>
   <% @show_accession_date = false %>
 
-  <% if (@show_collection_management_date == true)
-     @show_accession_date = true
-    end
-  %>
   <!-- solr fields -->
   <% if (@search_data[:criteria].has_key?("type[]") && (  @search_data[:criteria]["type[]"].include?("accession") || @search_data[:criteria]["type[]"].include?("collection_management")) )
        @show_accession_date = true
