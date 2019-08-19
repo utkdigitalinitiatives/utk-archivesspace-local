@@ -1,3 +1,16 @@
+body {
+  font-family: Gotham SSm\ 2r,Gotham SSm A,Gotham SSm B,Helvetica Neue,Helvetica,Arial,sans-serif !important; }
+
 .utk-scout-banner {
-  padding: 76px 45px 29px;
+  padding: 47px 45px 18px;
   background-color: #58595b !important; }
+  .utk-scout-banner h1 {
+    margin: 0;
+    color: #ffffff !important;
+    font-size: 23px;
+    line-height: 47px;
+    font-weight: 700; }
+  .utk-scout-banner--subtitle {
+    color: #e0e0e0 !important;
+    font-size: 18px;
+    font-weight: 400; }
