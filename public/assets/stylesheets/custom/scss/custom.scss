@@ -1,5 +1,21 @@
 body {
   font-family: Gotham SSm\ 2r,Gotham SSm A,Gotham SSm B,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li,
+  ul,
+  ol,
+  blockquote,
+  span,
+  div {
+    font-family: Gotham SSm\ 2r,Gotham SSm A,Gotham SSm B,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+  }
 }
 
 .utk-scout-banner {
@@ -18,5 +34,6 @@ body {
     color: #e0e0e0 !important;
     font-size: 18px;
     font-weight: 400;
+    margin: -6px 0 0;
   }
 }
