@@ -21,7 +21,9 @@
 	 var APP_PATH = '<%= PrefixHelper.app_prefix("") %>';
 	</script>
 
-	<%= stylesheet_link_tag    'application', media: 'all' %>
+	<%= stylesheet_link_tag 'application', media: 'all' %>
+	<%= stylesheet_link_tag '/assets/stylesheets/custom/css/custom.css' %>
+
 	<%= javascript_include_tag 'application' %>
 
         <%= render partial: 'shared/metadata' %>
@@ -47,6 +49,13 @@
          data-url="http://albatross.lib.utk.edu:8081"
          data-libchat="e98ae2539f2bd5d1659cc53d7de2812b"></div>
 	<%= render partial: 'shared/skipnav' %>
+
+	<div class="utk-scout-banner">
+		<div class="container-fluid no-pad">
+			<h1 class="utk-scout-banner--title">SCOUT</h1>
+			<span class="utk-scout-banner--subtitle">Special Collections Online at The University of Tennessee</span>
+		</div>
+	</div>
 
 	<div class="container-fluid no-pad">
 		<%= render partial: 'shared/navigation' %>
