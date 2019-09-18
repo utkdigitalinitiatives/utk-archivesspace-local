@@ -63,7 +63,7 @@ en:
   request:
     email_header: Thank you for your request
     required: required
-    user_name: Your name
+    user_name: Your full name
     user_email: Your email address
     user_phone: Your phone number
     date: Date of Expected Use
