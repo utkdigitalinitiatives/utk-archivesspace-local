@@ -1,0 +1,23 @@
+<h1><%=t('request.email_header') %></h1>
+
+<div class="request">
+  <h2>Record Requested</h2>
+  <strong>Title</strong>: <%= @request.title %><br>
+  <% url = "#{AppConfig[:public_proxy_url].sub(/\/^/, '')}#{@request.request_uri}" %>
+  <strong>URL</strong>: <%= link_to url, url %>
+</div>
+
+<div class="user">
+  <h2>Your Details</h2>
+  <strong>Name: </strong> <%= @request.user_name %><br>
+  <strong>Email: </strong> <a href="mailto:<%= @request.user_email %>"><%= @request.user_email %></a><br/>
+  <strong>Date of Expected Use: </strong> <%= @request.date %><br>
+</div>
+
+<div class="user">
+  <h2>Notes for Staff: </h2>
+  <strong>MS/AR/MPA: </strong> <%= @request.number %><br>
+  <strong>Box Number: </strong> <%= @request.box_number %><br>
+  <strong>Is this for a class project: </strong> <%= @request.answer %><br>
+  <strong>Other Infomation: </strong> <%= (@request.note || "").gsub(/[\n\r]/,"<br>\n").html_safe %>
+</div>
