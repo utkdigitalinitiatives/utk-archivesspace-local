@@ -67,7 +67,9 @@ en:
     user_email: Your email address
     user_phone: Your phone number
     date: Date of Expected Use
-    note: Please add the boxes you'd like to request
+    note: Please add any other information that can help with this request
+    number: MS/AR/MPA Number
+    box_number: Box Number
     visit: "Submit a request to visit %{repo_name} to view <strong>%{archival_object}</strong>"
     submit: Submit Request
     class_project: Are you working on a class project

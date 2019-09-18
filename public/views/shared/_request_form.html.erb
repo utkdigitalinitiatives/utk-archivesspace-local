@@ -24,8 +24,13 @@
       <%= text_field_tag :user_phone, nil, :placeholder => t('request.user_phone'), :class => 'form-control' %>
     </div>
     <div class="form-group ">
-      <%= label_tag(:date, t('request.date'),  :class => 'sr-only') %>
-      <%= text_field_tag :date, nil, :placeholder => t('request.date'), :class => 'form-control' %>
+      <%= label_tag(:date, "#{t('request.date')}, #{t('request.required')}",  :class => 'sr-only') %>
+      <div class="input-group">
+        <%= text_field_tag :date, nil, :placeholder => t('request.date'), :class => 'form-control' %>
+        <div class="input-group-addon">
+          <span class="required aria-hidden"><%= t('request.required') %></span>
+        </div>
+      </div>
     </div>
     <div class="form-group required ">
       <%= label_tag(:class_project, t('request.class_project')) %>
@@ -33,6 +38,14 @@
       <%= label_tag(:answer_yes, "yes") %>
       <%= radio_button_tag(:answer, "no") %>
       <%= label_tag(:answer_no, "no") %>
+    </div>
+    <div class="form-group ">
+      <%= label_tag(:number, t('request.number'),  :class => 'sr-only') %>
+      <%= text_field_tag :number, nil, :placeholder => t('request.number'), :class => 'form-control' %>
+    </div>
+    <div class="form-group ">
+      <%= label_tag(:box_number, t('request.box_number'),  :class => 'sr-only') %>
+      <%= text_field_tag :box_number, nil, :placeholder => t('request.box_number'), :class => 'form-control' %>
     </div>
     <div class="form-group ">
       <%= label_tag(:note, t('request.note'),  :class => 'sr-only') %>
