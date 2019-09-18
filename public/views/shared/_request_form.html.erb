@@ -30,7 +30,9 @@
     <div class="form-group required ">
       <%= label_tag(:class_project, t('request.class_project')) %>
       <%= radio_button_tag(:answer, "yes") %>
+      <%= label_tag(:answer_yes, "yes") %>
       <%= radio_button_tag(:answer, "no") %>
+      <%= label_tag(:answer_no, "no") %>
     </div>
     <div class="form-group ">
       <%= label_tag(:note, t('request.note'),  :class => 'sr-only') %>
