@@ -66,10 +66,11 @@ en:
     user_name: Your name
     user_email: Your email address
     user_phone: Your phone number
-    date: Anticipated arrival date
+    date: Date of Expected Use
     note: Please add the boxes you'd like to request
     visit: "Submit a request to visit %{repo_name} to view <strong>%{archival_object}</strong>"
     submit: Submit Request
+    class_project: Are you working on a class project
     submitted: Thank you, your request has been submitted.  You will soon receive an email with a copy of your request.
     errors:
       name: Please enter your name
