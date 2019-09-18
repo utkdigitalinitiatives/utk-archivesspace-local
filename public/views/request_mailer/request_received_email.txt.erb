@@ -1,0 +1,16 @@
+<%=t('request.email_header') %>
+
+-- Record Requested --
+Title: <%= @request.title %>
+URL: <%= "#{AppConfig[:public_proxy_url].sub(/\/^/, '')}#{@request.request_uri}" %>
+
+-- Your Details --
+Name: <%= @request.user_name %>
+Email: @request.user_email %>
+Date of Expected Use: <%= @request.date %>
+
+-- Notes for Staff --
+MS/AR/MPA: <%= @request.number %>
+Box Number: <%= @request.box_number %>
+Is this for a class project? <% @request.answer %>
+Other Information: <%= @request.note  %>
