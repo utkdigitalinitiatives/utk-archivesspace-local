@@ -1,0 +1,25 @@
+<h1>New Request</h1>
+<p>Request received: <%= Time.now %></p>
+
+<div class="user">
+  <h2>Requester</h2>
+  <strong>Name: </strong> <%= @request.user_name %><br>
+  <strong>Email: </strong> <a href="mailto:<%= @request.user_email %>"><%= @request.user_email %></a><br/>
+  <strong>Date: </strong> <%= @request.date %><br>
+</div>
+
+<div class="request">
+  <h2>Record Requested</h2>
+  <%= @request.to_text_array(false).each do |info| %>
+    <%= info%><br>
+  <% end %>
+</div>
+
+<div class="user">
+  <h2>Notes for Staff: </h2>
+  <strong>MS/AR/MPA: </strong> <%= @request.number %><br>
+  <strong>Box Number: </strong> <%= @request.box_number %><br>
+  <strong>Is this for a class project: </strong> <%= @request.answer %><br>
+  <strong>Other Infomation: </strong> <%= (@request.note || "").gsub(/[\n\r]/,"<br>\n").html_safe %>
+
+</div>
