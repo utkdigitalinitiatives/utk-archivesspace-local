@@ -7,10 +7,10 @@ URL: <%= "#{AppConfig[:public_proxy_url].sub(/\/^/, '')}#{@request.request_uri}"
 -- Your Details --
 Name: <%= @request.user_name %>
 Email: @request.user_email %>
-Date of Expected Use: <%= @request.date %>
+<%=t('request.date') %>: <%= @request.date %>
 
 -- Notes for Staff --
-MS/AR/MPA: <%= @request.number %>
-Box Number: <%= @request.box_number %>
-Is this for a class project? <% @request.answer %>
+<%=t('request.number') %>: <%= @request.number %>
+<%=t('request.box_number') %>: <%= @request.box_number %>
+<%=t('request.class_project'): %> <% @request.answer %>
 Other Information: <%= @request.note  %>
