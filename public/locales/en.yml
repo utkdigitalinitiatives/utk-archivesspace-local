@@ -66,7 +66,7 @@ en:
     user_name: Your name
     user_email: Your email address
     date: Anticipated arrival date
-    note: Please add the boxes you'd like to request
+    note: Please specify the boxes you'd like to request (box numbers), the MS/AR/MPA number, and a phone number if you'd prefer to be contacted that way.
     visit: "Submit a request to visit %{repo_name} to view <strong>%{archival_object}</strong>"
     submit: Submit Request
     submitted: Thank you, your request has been submitted.  You will soon receive an email with a copy of your request.
