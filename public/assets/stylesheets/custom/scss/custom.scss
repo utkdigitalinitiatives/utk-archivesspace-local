@@ -36,3 +36,10 @@ body {
     margin: -6px 0 0;
   }
 }
+
+.span.title,
+.span.required,
+.emph.render-smcaps,
+.emph.render-boldsmcaps {
+  font-variant: unset !important;
+}
