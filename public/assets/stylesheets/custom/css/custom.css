@@ -28,3 +28,11 @@ body {
     font-size: 18px;
     font-weight: 400;
     margin: -6px 0 0; }
+
+.request-additional-notes {
+  font-size: 14px; }
+  .request-additional-notes li {
+    font-size: 14px;
+    line-height: 1.5em; }
+    .request-additional-notes li.no-bullet {
+      list-style: none; }
