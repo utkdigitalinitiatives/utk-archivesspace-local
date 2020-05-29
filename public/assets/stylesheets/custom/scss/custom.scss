@@ -36,3 +36,16 @@ body {
     margin: -6px 0 0;
   }
 }
+
+.request-additional-notes {
+  font-size: 14px;
+
+  li {
+    font-size: 14px;
+    line-height: 1.5em;
+
+    &.no-bullet {
+      list-style: none;
+    }
+  }
+}
