@@ -27,7 +27,7 @@
       <%= label_tag(:note, t('request.note'),  :class => 'sr-only') %>
       <%= text_area_tag :note, nil, :rows=> "3", :cols => "25", :placeholder => t('request.note'), :class => 'form-control' %>
     </div>
-    <ul class="request-additional-notes"><%= t('request.note_additional') %></div>
+    <ul class="request-additional-notes"><%= t('request.note_additional.html_safe') %></div>
     <div class="form-group honeypot">
       <span class="aria-hidden">
         <%= label_tag :comment %>
