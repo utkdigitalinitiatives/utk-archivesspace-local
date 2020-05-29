@@ -66,7 +66,13 @@ en:
     user_name: Your name
     user_email: Your email address
     date: Anticipated arrival date
-    note: Please specify the boxes you'd like to request (box numbers), the MS/AR/MPA number, and a phone number if you'd prefer to be contacted that way.
+    note: Please dire
+    note_additional: >
+      "Phone number:
+      Date of Expected Use: Currently, Special Collections is open by appointment only. You must schedule a time to view the requested materials through the registration form on the Special Collections home page (lib.utk.edu/special)
+      Box Number Requested: *Please limit collection requests to 6 or less boxes total per requester
+      Other Information:
+      *Please check your email for confirmation of this collection request."
     visit: "Submit a request to visit %{repo_name} to view <strong>%{archival_object}</strong>"
     submit: Submit Request
     submitted: Thank you, your request has been submitted.  You will soon receive an email with a copy of your request.
