@@ -67,12 +67,7 @@ en:
     user_email: Your email address
     date: Anticipated arrival date
     note: Please include information listed below.
-    note_additional: >
-      <li><strong>Phone number</strong></li>
-      <li><strong>Date of Expected Use:</strong> Currently, Special Collections is open by appointment only. You must schedule a time to view the requested materials through the registration form on the Special Collections home page (<a href="https://www.lib.utk.edu/special">lib.utk.edu/special</a>)</li>
-      <li><strong>Box Number Requested:</strong> Please limit collection requests to 6 or less boxes total per requester</li>
-      <li><strong>Other Information</strong></li>
-      <li class="no-bullet"><span>*</span>Please check your email for confirmation of this collection request.</li>
+    note_additional: "<li><strong>Phone number</strong></li><li><strong>Date of Expected Use:</strong> Currently, Special Collections is open by appointment only. You must schedule a time to view the requested materials through the registration form on the Special Collections home page (<a href=\"https://www.lib.utk.edu/special\">lib.utk.edu/special</a>)</li><li><strong>Box Number Requested:</strong> Please limit collection requests to 6 or less boxes total per requester</li><li><strong>Other Information</strong></li><li class=\"no-bullet\"><span>*</span>Please check your email for confirmation of this collection request.</li>"
     visit: "Submit a request to visit %{repo_name} to view <strong>%{archival_object}</strong>"
     submit: Submit Request
     submitted: Thank you, your request has been submitted.  You will soon receive an email with a copy of your request.
