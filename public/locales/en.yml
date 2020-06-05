@@ -68,9 +68,9 @@ en:
     date: Anticipated arrival date
     note: Please include information listed below
     note_additional: |
+      <li><strong>Date of Expected Use:</strong> Special Collections will be open by appointment only from August 19 to November 24.  You must schedule a time to view the requested materials through the registration form on the <a href="https://www.lib.utk.edu/special">Special Collections home page</a>.</li>
+      <li><strong>Box Number Requested:</strong> Please limit collection requests to 6 or less boxes total per requester.</li>
       <li><strong>Phone number</strong></li>
-      <li><strong>Date of Expected Use:</strong> Currently, Special Collections is open by appointment only. You must schedule a time to view the requested materials through the registration form on the Special Collections home page (<a href="https://www.lib.utk.edu/special">lib.utk.edu/special</a>)</li>
-      <li><strong>Box Number Requested:</strong> Please limit collection requests to 6 or less boxes total per requester</li>
       <li><strong>Other Information</strong></li>
       <li class="no-bullet"><span>*</span>Please check your email for confirmation of this collection request.</li>
 
