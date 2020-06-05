@@ -34,3 +34,11 @@ span.required,
 .emph.render-smcaps,
 .emph.render-boldsmcaps {
   font-variant: unset !important; }
+
+.request-additional-notes {
+  font-size: 14px; }
+  .request-additional-notes li {
+    font-size: 14px;
+    line-height: 1.5em; }
+    .request-additional-notes li.no-bullet {
+      list-style: none; }
