@@ -17,6 +17,36 @@ body {
   }
 }
 
+.top-bar {
+  border: none !important;
+}
+
+.no-pad {
+  padding: 0 !important;
+}
+
+nav {
+  ul,
+  ol,
+  li {
+    font-size: 15px;
+  }
+}
+
+body {
+  p,
+  ul,
+  ol,
+  li,
+  blockquote,
+  .abstract,
+  .sub-note {
+    font-size: 15px !important;
+    line-height: 1.47em !important;
+    padding-left: 0;
+  }
+}
+
 .utk-scout-banner {
   padding: 47px 45px 18px;
   background-color: #58595b !important;
