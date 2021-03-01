@@ -51,6 +51,26 @@ body {
   margin-bottom: 2em;
 }
 
+.welcome-addendum {
+  a,
+  a:visited {
+    color: #006C93;
+  }
+
+  a:hover,
+  a:focus {
+    color: #8D2048;
+  }
+}
+
+.identifier .id-label {
+  font-family: Gotham SSm\ 2r,Gotham SSm A,Gotham SSm B,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+}
+
+.record-type-badge.resource {
+  color: #754A7E;
+}
+
 .utk-scout-banner {
   padding: 47px 45px 18px;
   background-color: #58595b !important;
