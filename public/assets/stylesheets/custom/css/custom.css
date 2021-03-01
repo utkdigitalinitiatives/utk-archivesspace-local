@@ -14,6 +14,9 @@ body {
   body div {
     font-family: Gotham SSm\ 2r,Gotham SSm A,Gotham SSm B,Helvetica Neue,Helvetica,Arial,sans-serif !important; }
 
+.container-fluid {
+  width: unset !important; }
+
 .top-bar {
   border: none !important; }
 
@@ -38,6 +41,20 @@ body .sub-note {
 
 .search {
   margin-bottom: 2em; }
+
+.welcome-addendum a,
+.welcome-addendum a:visited {
+  color: #006C93; }
+
+.welcome-addendum a:hover,
+.welcome-addendum a:focus {
+  color: #8D2048; }
+
+.identifier .id-label {
+  font-family: Gotham SSm\ 2r,Gotham SSm A,Gotham SSm B,Helvetica Neue,Helvetica,Arial,sans-serif !important; }
+
+.record-type-badge.resource {
+  color: #754A7E; }
 
 .utk-scout-banner {
   padding: 47px 45px 18px;

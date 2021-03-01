@@ -17,6 +17,10 @@ body {
   }
 }
 
+.container-fluid {
+  width: unset !important;
+}
+
 .top-bar {
   border: none !important;
 }
