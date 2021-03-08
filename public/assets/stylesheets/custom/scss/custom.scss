@@ -1,5 +1,8 @@
+@import "variables";
+
 body {
   font-family: Gotham SSm\ 2r,Gotham SSm A,Gotham SSm B,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+  background-color: $gray-0;
 
   h1,
   h2,
@@ -161,4 +164,12 @@ button.subject {
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
   color: #8D2048;
+}
+
+.recordrow {
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: $white;
+  box-shadow: $box-shadow;
+  border: none;
 }
