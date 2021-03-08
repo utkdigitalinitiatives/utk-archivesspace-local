@@ -384,6 +384,22 @@ en:
         summary: Summary
       messages:
         no_components: Resource has no components
+      finding_aid:
+        head: Finding Aid & Administrative Information
+        title: Title
+        subtitle: Subtitle
+        status: Status
+        date:  Date
+        description_rules: Description rules
+        identifier: Identifier
+        language: Language of description
+        script: Script of description
+        language_note: Language of description note
+        sponsor: Sponsor
+        edition_statement: Edition statement
+        series_statement: Series statement
+        note: Note
+        revision: Revision Statements
       related_accessions:
         accessions: Accession Records
         deaccessions: Deaccession Records
