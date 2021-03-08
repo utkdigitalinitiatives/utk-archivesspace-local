@@ -95,3 +95,13 @@ span.required,
 
 .button.subject {
   color: #705550; }
+
+.record-type-badge.repository {
+  color: #754A7E; }
+
+#content h1,
+#content h2,
+#content h3,
+#content h4 {
+  color: #333333;
+  font-weight: 700; }
