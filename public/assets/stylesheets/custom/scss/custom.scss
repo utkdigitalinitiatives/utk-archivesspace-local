@@ -158,7 +158,8 @@ button.subject {
 
 .navbar-default {
   background-color: $white !important;
-  box-shadow: $box-shadow-float;
+  box-shadow: $box-shadow;
+  border: none !important;
 
   .top-bar {
     background-color: inherit !important;
