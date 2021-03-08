@@ -136,6 +136,14 @@ button.subject {
   color: $regalia;
 }
 
+.record-type-badge.digital_object {
+  color: $legacy;
+}
+
+.record-type-badge.subject {
+  color: $buckskin;
+}
+
 #content {
   h1,
   h2,
@@ -207,7 +215,6 @@ button.subject {
 
 .panel-footer {
   padding: $golden-ratio-3 15px;
-  background-color: $white;
   border-color: $gray-1;
 
   p.footer-items {
