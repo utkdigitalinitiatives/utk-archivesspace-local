@@ -131,6 +131,12 @@ button.subject {
 .record-type-badge.repository {
   color: #754a7e; }
 
+.record-type-badge.digital_object {
+  color: #579584; }
+
+.record-type-badge.subject {
+  color: #705550; }
+
 #content h1,
 #content h2,
 #content h3,
@@ -188,7 +194,6 @@ button.subject {
 
 .panel-footer {
   padding: 29px 15px;
-  background-color: #fff;
   border-color: #e0e0e0; }
   .panel-footer p.footer-items {
     font-size: 13px; }
