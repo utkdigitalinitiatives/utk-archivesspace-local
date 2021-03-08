@@ -125,7 +125,7 @@ span.required,
   color: #8D2048;
 }
 
-.button.subject {
+button.subject {
   color: #705550;
 }
 
@@ -141,4 +141,24 @@ span.required,
     color: #333333;
     font-weight: 700;
   }
+
+  a,
+  a:visited {
+    color: #006C93;
+  }
+
+  a:focus,
+  a:hover {
+    color: #8D2048;
+  }
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:visited {
+  color: #006C93;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+  color: #8D2048;
 }
