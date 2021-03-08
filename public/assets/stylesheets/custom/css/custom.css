@@ -150,7 +150,7 @@ button.subject {
   background-color: #fff !important;
   box-shadow: 0 2px 5px rgba(51, 51, 51, 0.29); }
   .navbar-default .top-bar {
-    background-color: inherit; }
+    background-color: inherit !important; }
 
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > li > a:visited {
