@@ -147,16 +147,20 @@ button.subject {
   color: #8d2048; }
 
 .navbar-default {
-  background-color: #fff;
+  background-color: #fff !important;
   box-shadow: 0 2px 5px rgba(51, 51, 51, 0.29); }
 
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > li > a:visited {
-  color: #006c93; }
+  color: #006c93;
+  font-size: 15px;
+  font-weight: 700; }
 
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
-  color: #8d2048; }
+  color: #8d2048;
+  font-size: 15px;
+  font-weight: 700; }
 
 .recordrow {
   padding: 2em;
