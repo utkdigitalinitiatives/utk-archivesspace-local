@@ -67,12 +67,12 @@ body {
 .welcome-addendum {
   a,
   a:visited {
-    color: #006C93;
+    color: $globe;
   }
 
   a:hover,
   a:focus {
-    color: #8D2048;
+    color: $leconte;
   }
 }
 
@@ -81,23 +81,23 @@ body {
 }
 
 .record-type-badge.resource {
-  color: #754A7E;
+  color: $regalia;
 }
 
 .utk-scout-banner {
   padding: 47px 45px 18px;
-  background-color: #58595b !important;
+  background-color: $smokey !important;
 
   h1 {
     margin: 0;
-    color: #ffffff !important;
+    color: $white !important;
     font-size: 23px;
     line-height: 47px;
     font-weight: 700;
   }
 
   &--subtitle {
-    color: #e0e0e0 !important;
+    color: $gray-1 !important;
     font-size: 18px;
     font-weight: 400;
     margin: -6px 0 0;
@@ -125,15 +125,15 @@ span.required,
 }
 
 .collection, .resource {
-  color: #8D2048;
+  color: $leconte;
 }
 
 button.subject {
-  color: #705550;
+  color: $buckskin;
 }
 
 .record-type-badge.repository {
-  color: #754A7E;
+  color: $regalia;
 }
 
 #content {
@@ -141,35 +141,49 @@ button.subject {
   h2,
   h3,
   h4 {
-    color: #333333;
+    color: $smokeyx;
     font-weight: 700;
   }
 
   a,
   a:visited {
-    color: #006C93;
+    color: $globe;
   }
 
   a:focus,
   a:hover {
-    color: #8D2048;
+    color: $leconte;
   }
+}
+
+.navbar-default {
+  background-color: $white;
+  box-shadow: $box-shadow-float;
 }
 
 .navbar-default .navbar-nav>li>a,
 .navbar-default .navbar-nav>li>a:visited {
-  color: #006C93;
+  color: $globe;
 }
 
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
-  color: #8D2048;
+  color: $leconte;
 }
 
 .recordrow {
-  padding: 1em;
+  padding: 2em;
   margin-bottom: 2em;
   background-color: $white;
   box-shadow: $box-shadow;
   border: none;
+
+  h3 {
+    margin-bottom: 0.5em;
+  }
+}
+
+.badge-and-identifier {
+  display: flex;
+  margin-bottom: 0.5em;
 }

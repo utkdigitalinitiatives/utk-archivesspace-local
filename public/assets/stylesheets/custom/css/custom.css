@@ -81,24 +81,24 @@ body .subnote {
 
 .welcome-addendum a,
 .welcome-addendum a:visited {
-  color: #006C93; }
+  color: #006c93; }
 
 .welcome-addendum a:hover,
 .welcome-addendum a:focus {
-  color: #8D2048; }
+  color: #8d2048; }
 
 .identifier .id-label {
   font-family: Gotham SSm\ 2r,Gotham SSm A,Gotham SSm B,Helvetica Neue,Helvetica,Arial,sans-serif !important; }
 
 .record-type-badge.resource {
-  color: #754A7E; }
+  color: #754a7e; }
 
 .utk-scout-banner {
   padding: 47px 45px 18px;
   background-color: #58595b !important; }
   .utk-scout-banner h1 {
     margin: 0;
-    color: #ffffff !important;
+    color: #fff !important;
     font-size: 23px;
     line-height: 47px;
     font-weight: 700; }
@@ -123,40 +123,50 @@ span.required,
       list-style: none; }
 
 .collection, .resource {
-  color: #8D2048; }
+  color: #8d2048; }
 
 button.subject {
   color: #705550; }
 
 .record-type-badge.repository {
-  color: #754A7E; }
+  color: #754a7e; }
 
 #content h1,
 #content h2,
 #content h3,
 #content h4 {
-  color: #333333;
+  color: #333;
   font-weight: 700; }
 
 #content a,
 #content a:visited {
-  color: #006C93; }
+  color: #006c93; }
 
 #content a:focus,
 #content a:hover {
-  color: #8D2048; }
+  color: #8d2048; }
+
+.navbar-default {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(51, 51, 51, 0.29); }
 
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > li > a:visited {
-  color: #006C93; }
+  color: #006c93; }
 
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
-  color: #8D2048; }
+  color: #8d2048; }
 
 .recordrow {
-  padding: 1em;
+  padding: 2em;
   margin-bottom: 2em;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(51, 51, 51, 0.15);
   border: none; }
+  .recordrow h3 {
+    margin-bottom: 0.5em; }
+
+.badge-and-identifier {
+  display: flex;
+  margin-bottom: 0.5em; }
