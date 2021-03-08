@@ -185,3 +185,10 @@ button.subject {
   border-color: #006c93;
   color: #fff !important;
   font-weight: 700; }
+
+.panel-footer {
+  padding: 29px 15px;
+  background-color: #fff;
+  border-color: #e0e0e0; }
+  .panel-footer p.footer-items {
+    font-size: 13px; }

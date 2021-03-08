@@ -204,3 +204,14 @@ button.subject {
   color: $white !important;
   font-weight: 700;
 }
+
+.panel-footer {
+  padding: $golden-ratio-3 15px;
+  background-color: $white;
+  border-color: $gray-1;
+
+  p.footer-items {
+    font-size: $type-1;
+  }
+}
+
