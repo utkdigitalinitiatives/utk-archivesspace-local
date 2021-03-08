@@ -89,3 +89,9 @@ span.required,
     line-height: 1.5em; }
     .request-additional-notes li.no-bullet {
       list-style: none; }
+
+.collection, .resource {
+  color: #8D2048; }
+
+.button.subject {
+  color: #705550; }
