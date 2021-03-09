@@ -1,0 +1,22 @@
+dl#facets {
+  dt {
+    margin-bottom: 0.5em;
+    color: $smokey;
+    font-size: $type-0;
+    margin-top: 2em;
+  }
+
+  dd {
+    margin-bottom: 0.25em;
+    font-size: $type-1;
+
+    .recordnumber {
+      font-size: $type-0;
+      font-weight: 400;
+      background-color: $globe;
+      color: $white;
+      border-radius: $type-0;
+      padding: 2px 5px;
+    }
+  }
+}
