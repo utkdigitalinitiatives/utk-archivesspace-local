@@ -1,0 +1,15 @@
+.recordrow {
+  padding: 2em;
+  margin-bottom: 2em;
+  background-color: $white;
+  box-shadow: $box-shadow;
+  border: none;
+
+  h3 {
+    margin-bottom: 0.5em;
+  }
+}
+
+#whats-in-container {
+  @extend .recordrow;
+}
