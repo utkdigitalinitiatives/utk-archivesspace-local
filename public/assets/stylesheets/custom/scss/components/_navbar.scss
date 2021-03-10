@@ -25,3 +25,12 @@
 .top-bar {
   border: none !important;
 }
+
+.navbar .nav.nav-pills {
+  a,
+  a:visited,
+  a:hover,
+  a:focus {
+    background-color: transparent;
+  }
+}
