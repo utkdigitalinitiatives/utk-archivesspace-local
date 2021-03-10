@@ -167,6 +167,11 @@ dl#facets dd {
 .navbar .nav.nav-pills a:hover,
 .navbar .nav.nav-pills a:focus {
   background-color: transparent; }
+  .navbar .nav.nav-pills a.active,
+  .navbar .nav.nav-pills a:visited.active,
+  .navbar .nav.nav-pills a:hover.active,
+  .navbar .nav.nav-pills a:focus.active {
+    background-color: transparent !important; }
 
 .pagination > .active > a,
 .pagination > .active > a:hover,

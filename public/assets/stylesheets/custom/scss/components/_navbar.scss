@@ -32,5 +32,9 @@
   a:hover,
   a:focus {
     background-color: transparent;
+
+    &.active {
+      background-color: transparent !important;
+    }
   }
 }
