@@ -162,6 +162,12 @@ dl#facets dd {
 .top-bar {
   border: none !important; }
 
+.navbar .nav.nav-pills a,
+.navbar .nav.nav-pills a:visited,
+.navbar .nav.nav-pills a:hover,
+.navbar .nav.nav-pills a:focus {
+  background-color: transparent; }
+
 .pagination > .active > a,
 .pagination > .active > a:hover,
 .pagination > .active > a:focus,
