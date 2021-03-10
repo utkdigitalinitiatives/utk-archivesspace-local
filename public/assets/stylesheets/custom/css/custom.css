@@ -171,7 +171,8 @@ dl#facets dd {
   .navbar .nav.nav-pills a:visited.active,
   .navbar .nav.nav-pills a:hover.active,
   .navbar .nav.nav-pills a:focus.active {
-    background-color: transparent !important; }
+    background-color: transparent !important;
+    font-weight: 700; }
 
 .pagination > .active > a,
 .pagination > .active > a:hover,
