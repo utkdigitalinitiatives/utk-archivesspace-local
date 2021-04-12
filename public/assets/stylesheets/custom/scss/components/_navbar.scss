@@ -1,0 +1,41 @@
+.navbar-default {
+  background-color: $white !important;
+  box-shadow: $box-shadow;
+  border: none !important;
+
+  .top-bar {
+    background-color: inherit !important;
+  }
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:visited {
+  color: $globe;
+  font-size: $type-2 !important;
+  font-weight: 700;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+  color: $leconte;
+  font-size: $type-2 !important;
+  font-weight: 700;
+}
+
+.top-bar {
+  border: none !important;
+}
+
+.navbar .nav.nav-pills {
+  a,
+  a:visited,
+  a:hover,
+  a:focus {
+    background-color: transparent;
+
+    &.active {
+      background-color: transparent !important;
+      font-weight: 700;
+    }
+  }
+}

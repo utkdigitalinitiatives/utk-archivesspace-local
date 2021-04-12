@@ -24,12 +24,17 @@ en:
     title: ArchivesSpace Public Interface
     title_link_text: Return to the ArchivesSpace homepage
     home: Home
-    welcome_head: Welcome to ArchivesSpace
+    welcome_head: Welcome to SCOUT
     welcome_message: |
       <p>Search across our collections, digital materials, and more.</p>
 
     welcome_search_label: "Find what you're looking for:"
     welcome_page_title: ArchivesSpace Public Interface
+    welcome_addendum: |
+      <p>SCOUT (Special Collections Online at UT) is your discovery portal for manuscripts and archives held at the UT Libraries’  Betsey B. Creekmore Special Collections and University Archives. Here you will find descriptions of our primary sources including papers, correspondence, photographs, film and video, print items, digital materials, objects, and more. Please use OneSearch for Special Collections rare books, including artists’ books and University Archives books.</p>
+      <p>To view the materials described in these finding aids in person, please navigate to the material you wish to see and click on the Request button in the upper right corner. (Please note that Special Collections is currently open by appointment only. You also must schedule a time to view the requested materials in the reading room through the registration form on the <a href="https://www.lib.utk.edu/special/">Special Collections home page</a>.)</p>
+      <p>Visit the <a href="https://libguides.utk.edu/SCOUT/">SCOUT Research Guide</a> to learn more about collection description, searching, browsing, and requesting collections materials.</p>
+      <p>Please <a href="https://www.lib.utk.edu/special/">contact us</a> for assistance. We are happy to answer your questions during our business hours.</p>
 
   actions:
     search: Search
@@ -384,7 +389,6 @@ en:
         title: Title
         subtitle: Subtitle
         status: Status
-        author: Author
         date:  Date
         description_rules: Description rules
         identifier: Identifier

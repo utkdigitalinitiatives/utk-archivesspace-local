@@ -1,0 +1,55 @@
+body {
+  font-family: Gotham SSm\ 2r,Gotham SSm A,Gotham SSm B,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+  background-color: $gray-0;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li,
+  ul,
+  ol,
+  blockquote,
+  div {
+    font-family: Gotham SSm\ 2r,Gotham SSm A,Gotham SSm B,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+  }
+
+  #content {
+    font-size: 15px !important;
+    line-height: 1.47em !important;
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: $smokeyx;
+      font-weight: 700;
+    }
+
+    a,
+    a:visited {
+      color: $globe;
+    }
+
+    a:hover,
+    a:focus {
+      color: $leconte;
+    }
+
+    p,
+    ul,
+    ol,
+    li,
+    blockquote,
+    .abstract,
+    .sub-note,
+    .subnote {
+      font-size: 15px !important;
+      line-height: 1.47em !important;
+      padding-left: 0;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.badge-and-identifier {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+.record-type-badge.resource {
+  color: $regalia;
+}
+
+.collection, .resource {
+  color: $leconte;
+}
+
+.record-type-badge.repository {
+  color: $regalia;
+}
+
+.record-type-badge.digital_object {
+  color: $legacy;
+}
+
+.record-type-badge.subject {
+  color: $buckskin;
+}
+
+button.subject {
+  color: $buckskin;
+}
+
+.identifier .id-label {
+  font-family: Gotham SSm\ 2r,Gotham SSm A,Gotham SSm B,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+}

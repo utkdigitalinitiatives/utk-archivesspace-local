@@ -1,5 +1,37 @@
+/*
+ * colors
+ */
+/*
+ * typography
+ */
+/*
+ * relative sizing
+ */
+/*
+ * font-size for typography
+ */
+/*
+ * incremental spacers by golden ratio
+ */
+/*
+ * transitions
+ */
+/*
+ * box-shadows
+ */
+/*
+ * bootstrap 4 overrides
+ */
+/*
+ * WordPress vars
+ */
+/*
+ * Misc
+ */
+/** Bootstrap navbar fix (https://git.io/fADqW) */
 body {
-  font-family: Gotham SSm\ 2r,Gotham SSm A,Gotham SSm B,Helvetica Neue,Helvetica,Arial,sans-serif !important; }
+  font-family: Gotham SSm\ 2r,Gotham SSm A,Gotham SSm B,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+  background-color: #f6f6f6; }
   body h1,
   body h2,
   body h3,
@@ -13,13 +45,45 @@ body {
   body blockquote,
   body div {
     font-family: Gotham SSm\ 2r,Gotham SSm A,Gotham SSm B,Helvetica Neue,Helvetica,Arial,sans-serif !important; }
+  body #content {
+    font-size: 15px !important;
+    line-height: 1.47em !important; }
+    body #content h1,
+    body #content h2,
+    body #content h3,
+    body #content h4 {
+      color: #333;
+      font-weight: 700; }
+    body #content a,
+    body #content a:visited {
+      color: #006c93; }
+    body #content a:hover,
+    body #content a:focus {
+      color: #8d2048; }
+    body #content p,
+    body #content ul,
+    body #content ol,
+    body #content li,
+    body #content blockquote,
+    body #content .abstract,
+    body #content .sub-note,
+    body #content .subnote {
+      font-size: 15px !important;
+      line-height: 1.47em !important;
+      padding-left: 0; }
+
+.container-fluid {
+  width: unset !important; }
+
+.no-pad {
+  padding: 0 !important; }
 
 .utk-scout-banner {
   padding: 47px 45px 18px;
   background-color: #58595b !important; }
   .utk-scout-banner h1 {
     margin: 0;
-    color: #ffffff !important;
+    color: #fff !important;
     font-size: 23px;
     line-height: 47px;
     font-weight: 700; }
@@ -28,6 +92,107 @@ body {
     font-size: 18px;
     font-weight: 400;
     margin: -6px 0 0; }
+
+nav ul,
+nav ol,
+nav li {
+  font-size: 15px; }
+
+.badge-and-identifier {
+  display: flex;
+  margin-bottom: 0.5em; }
+
+.record-type-badge.resource {
+  color: #754a7e; }
+
+.collection, .resource {
+  color: #8d2048; }
+
+.record-type-badge.repository {
+  color: #754a7e; }
+
+.record-type-badge.digital_object {
+  color: #579584; }
+
+.record-type-badge.subject {
+  color: #705550; }
+
+button.subject {
+  color: #705550; }
+
+.identifier .id-label {
+  font-family: Gotham SSm\ 2r,Gotham SSm A,Gotham SSm B,Helvetica Neue,Helvetica,Arial,sans-serif !important; }
+
+dl#facets dt {
+  margin-bottom: 0.5em;
+  color: #58595b;
+  font-size: 11px;
+  margin-top: 2em; }
+
+dl#facets dd {
+  margin-bottom: 0.25em;
+  font-size: 13px; }
+  dl#facets dd .recordnumber {
+    font-size: 11px;
+    font-weight: 400;
+    background-color: #006c93;
+    color: #fff;
+    border-radius: 11px;
+    padding: 2px 5px; }
+
+.navbar-default {
+  background-color: #fff !important;
+  box-shadow: 0 2px 5px rgba(51, 51, 51, 0.15);
+  border: none !important; }
+  .navbar-default .top-bar {
+    background-color: inherit !important; }
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:visited {
+  color: #006c93;
+  font-size: 15px !important;
+  font-weight: 700; }
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #8d2048;
+  font-size: 15px !important;
+  font-weight: 700; }
+
+.top-bar {
+  border: none !important; }
+
+.navbar .nav.nav-pills a,
+.navbar .nav.nav-pills a:visited,
+.navbar .nav.nav-pills a:hover,
+.navbar .nav.nav-pills a:focus {
+  background-color: transparent; }
+  .navbar .nav.nav-pills a.active,
+  .navbar .nav.nav-pills a:visited.active,
+  .navbar .nav.nav-pills a:hover.active,
+  .navbar .nav.nav-pills a:focus.active {
+    background-color: transparent !important;
+    font-weight: 700; }
+
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span,
+.pagination > .active > span:hover,
+.pagination > .active > span:focus {
+  background-color: #006c93;
+  border-color: #006c93;
+  color: #fff !important;
+  font-weight: 700; }
+
+.recordrow, #whats-in-container {
+  padding: 2em;
+  margin-bottom: 2em;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(51, 51, 51, 0.15);
+  border: none; }
+  .recordrow h3, #whats-in-container h3 {
+    margin-bottom: 0.5em; }
 
 span.title,
 span.required,
@@ -42,3 +207,6 @@ span.required,
     line-height: 1.5em; }
     .request-additional-notes li.no-bullet {
       list-style: none; }
+
+.search {
+  margin-bottom: 2em; }
