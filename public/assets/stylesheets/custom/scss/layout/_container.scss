@@ -5,3 +5,22 @@
 .no-pad {
   padding: 0 !important;
 }
+
+.row {
+  display: unset;
+  flex-wrap: unset;
+}
+
+.col-sm-3,
+.col-sm-9 {
+  flex: unset;
+  max-width: unset;
+}
+
+.col-sm-3 {
+  width: 25%;
+}
+
+.col-sm-9 {
+  width: 75%;
+}
