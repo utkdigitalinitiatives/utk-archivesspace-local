@@ -35,7 +35,7 @@ en:
       <p>SCOUT (Special Collections Online at UT) is your discovery portal for manuscripts and archives held at the UT Libraries’ Betsey B. Creekmore Special Collections and University Archives. Here you will find descriptions of our primary sources including papers, correspondence, photographs, film and video, print items, digital materials, objects, and more. (Please use OneSearch for Special Collections rare books, including artists’ books and University Archives books.</p>
       <p>A Special Collections research account is required to use materials described in the finding aids in person. Requests for materials and reproductions must be submitted through your account.</p>
       <p>Please note:</p>
-      <ul>
+      <ul class="addendum">
       <li>Collections are stored offsite and must be requested a minimum of 5 full days prior to your scheduled visit.</li>
       <li>There is a limit of 6 active requests at a time.</li>
       <li>Collections can only be requested at the folder or item level, not the collection or series level.</li>
