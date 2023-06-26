@@ -210,3 +210,7 @@ span.required,
 
 .search {
   margin-bottom: 2em; }
+
+ul.addendum > li {
+  margin-left: 40px;
+}

@@ -1,4 +1,4 @@
-**JIRA Ticket**: [Ticket Number](link)
+**Clickup Ticket**: [Ticket Number](link)
 
 
 # What does this Pull Request do?
